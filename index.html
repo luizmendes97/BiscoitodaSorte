@@ -1,36 +1,37 @@
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Biscoito da Sorte</title>
-    <link rel="stylesheet" href="style.css" />
     <link
-      href="https://fonts.googleapis.com/css2?family=DM+Sans&family=Montserrat:wght@700&display=swap"
-      rel="stylesheet"/>
+      href="https://fonts.googleapis.com/css?family=Montserrat:700"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=DM+Sans:regular,700"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Dancing+Script:regular"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Biscoito da Sorte</title>
   </head>
   <body>
-    <main>
-      <div class="screen1">
-        <h1>Qual é sua sorte de hoje ?</h1>
-        <p>Abra o biscoito e descubra!</p>
-        <button id="btnCokiee">
-          <img src="./assets/fortune-cookie.png" alt="Biscoito">
-        </button>
-      </div>
-
-      <div class="screen2 hide">
-        <h1>Aqui esta sua sorte de hoje:</h1>
-        <p>Se alguém está tão cansado que não possa te dar um sorriso, deixa-lhe o teu.</p>
-        <img src="./assets/opened-cookie.png" alt="Biscoito se abriu">
-        <form>
-        <button id="btnOpen">Abrir outro biscoito</button>
-        </form>
-      </div>
-
-    </main>
+    <section id="fortune-cookie">
+      <h1>Qual é a sua sorte de hoje?</h1>
+      <div id="luck-container" class="hide"></div>
+      <p>Abra o biscoito e descubra!</p>
+      <img
+        id="cookie-image"
+        src="./assets/fortune-cookie.png"
+        alt="Um biscoito da sorte fechado"
+        class="closed"
+      />
+      <button class="open-button hide">Abrir outro biscoito</button>
+    </section>
     <script src="./main.js"></script>
   </body>
 </html>
